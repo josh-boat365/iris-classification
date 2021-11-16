@@ -28,7 +28,7 @@ knn.fit(x_train,y_train)
 predictions = knn.predict(x_test)
 
 #testing for the accuracy of the predictions on the data 'x' 
-print(accuracy_score(y_test,predictions))
+print("Accuracy Score: ", accuracy_score(y_test,predictions))
 
 #exporting the ml model coefficients into a pickle 'pkl' file - we do this so that we don't have to retrain the model when we want to make future predictions.
 with open('model.pkl', 'wb') as model_pkl:
